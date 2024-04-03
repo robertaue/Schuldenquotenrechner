@@ -406,13 +406,13 @@
         var sync = Dygraph.synchronize(g1, g2);
       }
       
-      window.onload = function() {
+      //window.onload = function() {
         updateSimulation();
         for (const i in parms) { // for .. in iterates over elements of an object
           //parms[i].addEventListener('input', updateLRSS);
           parms[i].addEventListener('change', updateSimulation); // use change instead, possible reason for crash on ios after active slider usage
         }
-      }
+      //}
 
       window.onresize = function() {
         renderChart(res);
