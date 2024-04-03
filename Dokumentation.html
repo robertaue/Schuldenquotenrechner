@@ -1,3 +1,4 @@
+<--! see https://www.imatheq.com/imatheq/com/imatheq/math-equation-editor-latex-mathml.html -->
 <div class="row">
     <h2>Nicht-technische Zusammenfassung</h2>
 
@@ -75,5 +76,47 @@
         und <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>t</mi></msub></math>  
         die Pendants zu <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>D</mi><mi>t</mi></msub></math>  
         und <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>X</mi><mi>t</mi></msub></math>  als Anteile am BIP sind.
+    </p>
+    <p>
+        Annahmegemäß entspricht 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>d</mi><mi>t</mi></msub></math>
+        immer der maximal zulässigen Kreditaufnahme 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>d</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover></math>
+        . Derzeit beträgt diese 0% des BIP für das Land. Der Benutzer kann eigene Werte für 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>d</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover></math> 
+        eingeben im Wertebereich von 0% bis 1% des BIP.        
+    </p>
+    <p>
+        Die Höhe des Notkredites als Anteil am BIP folgt einer Lognormalverteilung, ist aber nur mit einer Wahrscheinlichkeit 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>p</mi><mi>x</mi></msub></math> 
+        größer als Null:
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow><msub><mi>x</mi><mi>t</mi></msub><mo>=</mo><mrow><mfenced open='{' close=''><mtable columnalign="left" class="tml-array"><mtr><mtd style="text-align:-webkit-left;"><mrow><msub><mi>&#x3be;</mi><mi>t</mi></msub><mo>&#x223c;</mo><mi>L</mi><mi>N</mi><mo form="prefix" stretchy="false">(</mo><msub><mi>&#x3bc;</mi><mi>x</mi></msub><mo separator="true">,</mo><msubsup><mi>&#x3c3;</mi><mi>x</mi><mn>2</mn></msubsup><mo form="postfix" stretchy="false">)</mo></mrow></mtd><mtd><mrow><mtext>mit&#xa0;Wahrscheinlichkeit&#xa0;</mtext><msub><mi>p</mi><mi>x</mi></msub></mrow></mtd></mtr><mtr><mtd style="text-align:-webkit-left;"><mn>0</mn></mtd><mtd><mtext>sonst</mtext></mtd></mtr></mtable></mfenced></mrow></mrow>
+        </math>
+        Die Parameter 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x3bc;</mi><mi>x</mi></msub></math>
+        und 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x3c3;</mi><mi>x</mi></msub></math>
+        werden so gewählt, dass
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="double-struck">E</mi><mo form="prefix" stretchy="false">[</mo><msub><mi>&#x3be;</mi><mi>t</mi></msub><mo form="postfix" stretchy="false">]</mo><mo>=</mo><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover></mrow></math>
+        und 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi>V</mi><mi>a</mi><mi>r</mi><mrow><mfenced open='(' close=')'><msub><mi>&#x3be;</mi><mi>t</mi></msub></mfenced></mrow><mo>=</mo><msubsup><mi>s</mi><mi>x</mi><mn>2</mn></msubsup></mrow></math>
+        , speziell 
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow><msub><mi>&#x3bc;</mi><mi>x</mi></msub><mo>=</mo><mi>ln</mi><mrow><mfenced open='(' close=')'><mfrac><msup><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover><mn>2</mn></msup><msqrt><mrow><msup><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover><mn>2</mn></msup><mo>+</mo><msubsup><mi>s</mi><mi>x</mi><mn>2</mn></msubsup></mrow></msqrt></mfrac></mfenced></mrow><mtext>&#xa0;und&#xa0;</mtext><msubsup><mi>&#x3c3;</mi><mi>x</mi><mn>2</mn></msubsup><mo>=</mo><mi>ln</mi><mrow><mfenced open='(' close=')'><mn>1</mn><mo>+</mo><mfrac><msubsup><mi>s</mi><mi>x</mi><mn>2</mn></msubsup><msup><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover><mn>2</mn></msup></mfrac></mfenced></mrow></mrow>
+        </math>
+        Der Benutzer kann die Parameter 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover></math> 
+        und 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>p</mi><mi>x</mi></msub></math> 
+        frei wählen, wobei letzterer als Kehrwert der „mittleren Häufigkeit“ berechnet wird. 
+        Der Parameter 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>s</mi><mi>x</mi></msub></math> 
+        ist auf 0.5 festgesetzt. Folglich gilt 
+        <math xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mi mathvariant="double-struck">E</mi><mo form="prefix" stretchy="false">[</mo><msub><mi>x</mi><mi>t</mi></msub><mo form="postfix" stretchy="false">]</mo><mo>=</mo><msub><mi>p</mi><mi>x</mi></msub><mover><mi>x</mi><mo stretchy="true" style="math-style:normal;math-depth:0;">&#x2212;</mo></mover></mrow></math>        
+    </p>
+
+    <p>
+        
     </p>
 </div>
