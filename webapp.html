@@ -160,14 +160,16 @@
   <div class="col-sm-8 bg-light">
     <span id="test_output"></span>
     <!--<canvas id="simulation-chart" width="399" height="199" style="display: block; box-sizing: border-box; height: 199px; width: 399px;"></canvas>-->
-    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Grafik-Schuldenquote" aria-expanded="true">
+    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Grafik-Schuldenquote" aria-expanded="true"
+      onclick="updateSimulation()">
       Ergebnis: Schuldenquote
     </button><br>
     <div class="chart-container collapse show" id="Grafik-Schuldenquote">
-      <div id="graphdiv1" class="chart"></div>
+      <div id="graphdiv1" class="chart"></div><br>
       <div id="graphlabel1" class="chart-label"></div>
     </div>
-    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Grafik-ZinsSteuerQuote" aria-expanded="true">
+    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Grafik-ZinsSteuerQuote" aria-expanded="true"
+      onclick="updateSimulation()">
       Ergebnis: Zins-Steuer-Quote
     </button><br>
     <div class="chart-container collapse show" id="Grafik-ZinsSteuerQuote">
