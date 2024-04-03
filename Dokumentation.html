@@ -1,7 +1,7 @@
 <div class="row">
     <h2>Nicht-technische Zusammenfassung</h2>
 
-    Diese Webapp wurde entwickelt, um Vorschläge zur Reform der Schuldenbremse hinsichtlich ihrer 
+    <p>Diese Webapp wurde entwickelt, um Vorschläge zur Reform der Schuldenbremse hinsichtlich ihrer 
     Auswirkungen auf die Schuldentragfähigkeit zu untersuchen. Dazu kann der Benutzer verschiedene 
     Schlüsselparameter eingeben, wie etwa die Höhe der regulären Verschuldungsgrenze oder die 
     Häufigkeit der Notkredit-Inanspruchnahme. Die Webapp berechnet anhand dieser Annahmen, wie 
@@ -9,16 +9,24 @@
     ist dabei der Anteil des Schuldenstandes an der schleswig-holsteinischen Wirtschaftsleistung 
     (BIP) in Prozent. Für die Zinsbelastung im Haushalt ist die Zins-Steuer-Quote eine wichtige Größe. 
     Sie hängt direkt von der Schuldenquote ab, erfordert aber zudem eine Annahme über die 
-    Zinsentwicklung und über die Höhe der Steuereinnahmen.
+    Zinsentwicklung und über die Höhe der Steuereinnahmen.</p>
 
-    Der Benutzer kann folgende Parameter frei wählen:
-    (Tabelle)
+    <p>Der Benutzer kann folgende Parameter frei wählen:</p>
 
     <h2>Technische Modellbeschreibung</h2>
 
-    Das nominale Bruttoinlandsprodukt Schleswig-Holsteins 
+    <p>Das nominale Bruttoinlandsprodukt Schleswig-Holsteins 
     <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math">
         <mml:msub><mml:mrow><mml:mi>Y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub>
     </mml:math> 
     entwickelt sich gemäß
+    <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math">
+        <mml:msub><mml:mrow><mml:mi>Y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>=</mml:mo><mml:mfenced separators="|">
+            <mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:msub><mml:mrow><mml:mi>g</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub>
+            </mml:mrow></mml:mfenced><mml:msub><mml:mrow><mml:mi>Y</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:mn>1</mml:mn></mml:mrow>
+            </mml:msub><mml:mi> </mml:mi><mml:mi> </mml:mi><mml:mi mathvariant="normal">m</mml:mi><mml:mi mathvariant="normal">i</mml:mi><mml:mi mathvariant="normal">t</mml:mi>
+        <mml:mi> </mml:mi><mml:msub><mml:mrow><mml:mi>g</mml:mi></mml:mrow><mml:mrow><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mo>∼</mml:mo><mml:mi>N</mml:mi>
+        <mml:mo>(</mml:mo><mml:msub><mml:mrow><mml:mi>μ</mml:mi></mml:mrow><mml:mrow><mml:mi>g</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:msubsup>
+            <mml:mrow><mml:mi>σ</mml:mi></mml:mrow><mml:mrow><mml:mi>g</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msubsup><mml:mo>)</mml:mo></mml:math>
+    </p>
 </div>
